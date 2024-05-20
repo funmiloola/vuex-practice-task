@@ -7,11 +7,28 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state:{
         enteredName: '',
-        displayEnteredName:''
+        inputtedAge: '',
+        inputtedEmail:''
+        
     },
-    getters: {
-        updateEnteredName:state => {
-            return state.displayEnteredName = state.enteredName;
+    mutations: {
+        setDisplayName(state,name) {
+            return state.enteredName = name;
+        },
+        setInputtedAge(state, age) {
+            return state.inputtedAge = age;
+        },
+        setInputtedEmail(state, email) {
+            return state.inputtedEmail = email;
+        },
+        setDeleteName(state) {
+            return state.enteredName = '';
+        },
+        setDeleteAge(state) {
+            return state.inputtedAge = '';
+        },
+        setDeleteMail(state) {
+            state.inputtedEmail = '';
         }
     }
 })

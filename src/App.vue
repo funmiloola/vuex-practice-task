@@ -1,11 +1,15 @@
 <template>
   <div id="app">
    <top-section/>
+   <div class="flex items-center justify-center gap-6 pt-8">   
    <first-section/>
    <second-section/>
    <third-section/>
+   </div>
+   <div class="flex items-center justify-center gap-8 pt-8">
    <fourth-section/>
    <fifth-section/>
+   </div>
   </div>
 </template>
 
@@ -29,12 +33,5 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+
 </style>
